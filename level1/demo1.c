@@ -18,13 +18,13 @@ void input(int n,float arr[])
     printf("Enter the array elements:\t\n");
     for(int i=0;i<n;i++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%f",&arr[i]);
     }
 }
 int  find_max_index(int n,float arr[])
 {
     int max_index=0;
-    for(int i=0;i<n;i++)
+    for(int i=1;i<n;i++)
     {
         if(arr[i]>arr[max_index])
         max_index=i;
@@ -33,6 +33,6 @@ int  find_max_index(int n,float arr[])
 }
 void output(float arr[],int max_index)
 {
-    printf("Largest number is:%d \t\n",arr[max_index]);
+    printf("Largest number is:%f \t\n",arr[max_index]);
     printf("Largest index is:%d\t\n",max_index);
 }
